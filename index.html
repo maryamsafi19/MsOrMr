@@ -15,7 +15,7 @@
           <h2 class="request_part__header">Ms Or Mr?</h2>
           <div class="request_part__textfield">
             <label for="name_textfield">Name: </label>
-            <input type="text" id="name_textfield" />
+            <input type="text" id="name_textfield" maxlength="255" onkeypress="return /[a-zA-Z\s]/i.test(event.key)" />
           </div>
           <div class="request_part__radios">
             <div class="radio">

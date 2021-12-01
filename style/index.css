@@ -29,9 +29,59 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   opacity: 0.6;
   background-color: black;
   border-radius: 1rem;
+}
+
+/* 
+    Each side of container has this class, in this block we set display and width of each part.
+*/
+.card {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  color: white;
+  /* background-color: white; */
+}
+
+/*
+    Margin to each element of request part.
+*/
+.request_part form * {
+  margin: 5px;
+}
+
+/*
+    Put the radio buttons in vertical.
+*/
+.request_part__radios {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/*
+    Put the submit buttons in vertical.
+*/
+.request_part__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+}
+
+/*
+Style the buttons.
+*/
+button {
+  width: 100px;
 }

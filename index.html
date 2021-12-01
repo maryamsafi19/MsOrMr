@@ -10,7 +10,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>TEST</h1>
+      <div class="request_part card">
+        <form>
+          <h2 class="request_part__header">Ms Or Mr?</h2>
+          <div class="request_part__textfield">
+            <label for="name_textfield">Name: </label>
+            <input type="text" id="name_textfield" />
+          </div>
+          <div class="request_part__radios">
+            <div class="radio">
+              <input type="radio" id="male_radio" name="gender" value="Male" />
+              <label for="male_radio">Male</label>
+            </div>
+            <div class="radio">
+              <input
+                type="radio"
+                id="female_radio"
+                name="gender"
+                value="Female"
+              />
+              <label for="female_radio">Female</label>
+            </div>
+          </div>
+          <div class="request_part__buttons">
+            <button type="button">Submit</button>
+            <button type="button">Save</button>
+          </div>
+        </form>
+      </div>
+      <div class="response_part card">
+        <h1>TEST</h1>
+      </div>
     </div>
   </body>
 </html>

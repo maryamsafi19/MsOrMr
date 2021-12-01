@@ -9,17 +9,29 @@
     <link rel="icon" type="image/png" href="./assets/gender.png" />
   </head>
   <body>
+    <div class="error"></div>
     <div class="container">
       <div class="request_part card">
         <form>
           <h2 class="request_part__header">Ms Or Mr?</h2>
           <div class="request_part__textfield">
             <label for="name_textfield">Name: </label>
-            <input type="text" id="name_textfield" maxlength="255" onkeypress="return /[a-zA-Z\s]/i.test(event.key)" />
+            <input
+              type="text"
+              id="name_textfield"
+              maxlength="255"
+              onkeypress="return /[a-zA-Z\s]/i.test(event.key)"
+            />
           </div>
           <div class="request_part__radios">
             <div class="radio">
-              <input type="radio" id="male_radio" name="gender" value="Male" />
+              <input
+                type="radio"
+                checked="true"
+                id="male_radio"
+                name="gender"
+                value="Male"
+              />
               <label for="male_radio">Male</label>
             </div>
             <div class="radio">
@@ -33,23 +45,25 @@
             </div>
           </div>
           <div class="request_part__buttons">
-            <button type="button">Submit</button>
-            <button type="button">Save</button>
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="save">Save</button>
           </div>
         </form>
       </div>
       <div class="response_part card">
         <div class="predict mini-card">
           <h2 class="predict__title">Prediction</h2>
-          <div class="predict__gender">male</div>
-          <div class="predict__prob">0.7</div>
+          <div class="predict__gender"></div>
+          <div class="predict__prob"></div>
         </div>
         <div class="saved mini-card">
           <h2 class="saved__title">Saved Answer</h2>
-          <div class="saved__gender">male</div>
-          <button type="button">Clear</button>
+          <div class="saved__gender"></div>
+          <button type="button" id="clear">Clear</button>
         </div>
       </div>
     </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

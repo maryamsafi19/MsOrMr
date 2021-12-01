@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  width: 100%;
+
+  display: flex;
+}
